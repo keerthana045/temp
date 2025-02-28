@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -23,4 +24,31 @@
     <span id="data"></span>
     <button onclick="increment()">+</button>
   </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      let value = 0;
+      function increment() {
+        value=value+1
+        data.innerHTML = value
+      }
+      function decrement() {
+        if (value>0){
+            value=value-1
+        }
+        data.innerHTML = value
+      }
+    </script>
+  </head>
+  <body>
+    <button onclick="decrement()">-</button>
+    <span id="data"></span>
+    <button onclick="increment()">+</button>
+  </body>
+>>>>>>> 16310c13e3fb8b2b1d23631097bdd79af6243d49
 </html>

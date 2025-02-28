@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -22,4 +23,31 @@
       };
     </script>
   </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="assets/images/ball.png" width="200px" id="ball">
+    <script>
+        ball.style.position = "absolute"
+        let b = document.body;
+        let left = 0;
+        let right = 0;
+        b.onkeydown = (e) => {
+            if(e.key == "ArrowRight") left += 5;
+            if(e.key == "ArrowLeft") right += 5;
+            ball.style.left = left + "px"
+            ball.style.right = right + "px"
+
+            //root.innerHTML = e.key;
+        }; 
+    </script>
+    
+</body>
+>>>>>>> 16310c13e3fb8b2b1d23631097bdd79af6243d49
 </html>
